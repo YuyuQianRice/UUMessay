@@ -1,4 +1,4 @@
-# UUMessa
+# UUMessay
 > A great iOS app for people to chat.
 
 [![Swift Version][swift-image]][swift-url]
