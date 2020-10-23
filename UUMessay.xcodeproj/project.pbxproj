@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		7D4C5A60D05314BCA4911FCA /* Pods_UUMessayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300150FC128BB419B56782FF /* Pods_UUMessayTests.framework */; };
 		89363068253197AA00C4F3FF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89363067253197AA00C4F3FF /* Extensions.swift */; };
-		893630842532F82700C4F3FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 893630832532F82700C4F3FF /* GoogleService-Info.plist */; };
+		893631182533060E00C4F3FF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893631172533060E00C4F3FF /* DatabaseManager.swift */; };
+		89905F7C25438C3000C65390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89905F7B25438C3000C65390 /* GoogleService-Info.plist */; };
 		8999DAFE253185AF00CE9B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999DAFD253185AF00CE9B26 /* AppDelegate.swift */; };
 		8999DB00253185AF00CE9B26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999DAFF253185AF00CE9B26 /* SceneDelegate.swift */; };
 		8999DB02253185AF00CE9B26 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999DB01253185AF00CE9B26 /* ConversationsViewController.swift */; };
@@ -54,7 +55,8 @@
 		647A99B2425545B22F34F078 /* Pods-UUMessay-UUMessayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUMessay-UUMessayUITests.release.xcconfig"; path = "Target Support Files/Pods-UUMessay-UUMessayUITests/Pods-UUMessay-UUMessayUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6957F87DA2F3DEE061C4915F /* Pods_UUMessay_UUMessayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UUMessay_UUMessayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89363067253197AA00C4F3FF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		893630832532F82700C4F3FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		893631172533060E00C4F3FF /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		89905F7B25438C3000C65390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8999DAFA253185AF00CE9B26 /* UUMessay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UUMessay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8999DAFD253185AF00CE9B26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8999DAFF253185AF00CE9B26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +157,7 @@
 		8999DAFC253185AF00CE9B26 /* UUMessay */ = {
 			isa = PBXGroup;
 			children = (
-				893630832532F82700C4F3FF /* GoogleService-Info.plist */,
+				89905F7B25438C3000C65390 /* GoogleService-Info.plist */,
 				8999DB3425318B4B00CE9B26 /* Resources */,
 				8999DB3325318B4000CE9B26 /* ViewModels */,
 				8999DB3225318B3800CE9B26 /* Views */,
@@ -226,6 +228,7 @@
 				8999DAFD253185AF00CE9B26 /* AppDelegate.swift */,
 				8999DAFF253185AF00CE9B26 /* SceneDelegate.swift */,
 				89363067253197AA00C4F3FF /* Extensions.swift */,
+				893631172533060E00C4F3FF /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -357,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8999DB0A253185B100CE9B26 /* LaunchScreen.storyboard in Resources */,
-				893630842532F82700C4F3FF /* GoogleService-Info.plist in Resources */,
+				89905F7C25438C3000C65390 /* GoogleService-Info.plist in Resources */,
 				8999DB07253185B100CE9B26 /* Assets.xcassets in Resources */,
 				8999DB05253185AF00CE9B26 /* Main.storyboard in Resources */,
 			);
@@ -488,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8999DB4525318E8700CE9B26 /* RegisterViewController.swift in Sources */,
+				893631182533060E00C4F3FF /* DatabaseManager.swift in Sources */,
 				8999DB02253185AF00CE9B26 /* ConversationsViewController.swift in Sources */,
 				8999DB6225318F2B00CE9B26 /* NewConversationViewController.swift in Sources */,
 				8999DAFE253185AF00CE9B26 /* AppDelegate.swift in Sources */,
