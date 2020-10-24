@@ -12,7 +12,8 @@ One to two paragraph statement about your product and what it does.
 
 ## Features
 
-- [x] Users can chat through the app.
+- [x] Users can log in with Facebook account.
+- [x] Users can log in with Google account.
 
 
 ## Requirements
