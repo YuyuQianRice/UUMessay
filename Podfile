@@ -15,9 +15,13 @@ target 'UUMessay' do
   target 'UUMessayUITests' do
     # Pods for testing
   end
-  
+  # firebase
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-
+  # facebook sign in
+  pod 'FBSDKLoginKit'
+  # google sign in
+  pod 'GoogleSignIn'
+  
 end

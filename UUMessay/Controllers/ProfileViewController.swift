@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseAuth
+import FBSDKLoginKit
+import GoogleSignIn
 
 class ProfileViewController: UIViewController {
 
@@ -43,8 +45,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let actionSheet = UIAlertController(title: "",
-                                      message: "",
+        let actionSheet = UIAlertController(title: "Are You Certain?",
+                                      message: "Make sure you are loging out.",
                                       preferredStyle: .actionSheet)
         
         actionSheet.addAction(UIAlertAction(title: "Log Out",
@@ -55,6 +57,13 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                                                     return
                                                 }
                                                 
+                                                // log out facebook
+                                                FBSDKLoginKit.LoginManager().logOut()
+                                                
+                                                // log out google
+                                                GIDSignIn.sharedInstance()?.signOut()
+                                                
+                                                // log out firebase
                                                 do {
                                                     try FirebaseAuth.Auth.auth().signOut()
                                                     
@@ -69,6 +78,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                                                 }
                                             }))
         
+        actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                            style: .cancel,
+                                            handler: nil))
         
         present(actionSheet, animated: true)
 
